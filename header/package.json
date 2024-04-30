@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port 5001 --strictPort",
+    "build:remotes": "pnpm --parallel --filter \"../cards\" build",
+    "serve:remotes": "pnpm --parallel --filter \"../cards\" preview",
+    "dev": "pnpm run build:remotes && pnpm run serve:remotes & vite --port 5001 --strictPort",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview --port 5001 --strictPort"
