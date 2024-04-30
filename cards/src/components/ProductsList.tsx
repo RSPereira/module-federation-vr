@@ -1,8 +1,8 @@
 import {useQuery} from '@tanstack/react-query'
 
-import {IProduct} from '../types/product'
+import {IProduct} from '../types/productType'
 import {ProductCard} from './ProductCard'
-import {getProducts} from '../services/product'
+import {getProducts} from '../services/productService'
 
 export const ProductsList = () => {
   const {data, isLoading} = useQuery({

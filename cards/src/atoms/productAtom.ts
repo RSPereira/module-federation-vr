@@ -1,6 +1,6 @@
-import {atom} from 'jotai'
+import {atom, useAtom} from 'jotai'
 
-import {TProductCart} from '../types/product'
+import {TProductCart} from '../types/productType'
 
 export const cartAtom = atom<TProductCart[]>([])
 export const addProductAtom = atom(
@@ -9,3 +9,5 @@ export const addProductAtom = atom(
     set(cartAtom, [...get(cartAtom), productData])
   },
 )
+
+export const useProductsCart = () => useAtom(cartAtom)

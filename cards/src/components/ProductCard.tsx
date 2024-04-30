@@ -1,7 +1,7 @@
 import {useAtom} from 'jotai'
-import {IProduct} from '../types/product'
+import {IProduct} from '../types/productType'
 import {formattedCurrency} from '../utils/formatCurrencyToBrl'
-import {addProductAtom} from '../atoms/product'
+import {addProductAtom} from '../atoms/productAtom'
 
 export const ProductCard = ({
   id,

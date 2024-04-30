@@ -1,3 +1,4 @@
-declare module "header/App"
-declare module "cards/App"
-declare module "footer/App"
+declare module 'header/App'
+declare module 'cards/QueryClientProvider'
+declare module 'cards/ProductsList'
+declare module 'footer/App'
