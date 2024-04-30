@@ -1,16 +1,16 @@
-import { useState } from 'react'
-import './App.css'
+import {Suspense} from 'react'
+import {QueryClientProvider} from '@tanstack/react-query'
+
+import {ProductsList} from './components/ProductsList'
+import {queryClient} from './services/queryClient'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1>CARDS - Vite + React</h1>
-      <button onClick={() => setCount((count) => count + 1)}>
-        count is {count}
-      </button>
-    </>
+    <QueryClientProvider client={queryClient}>
+      <Suspense fallback="Loading...">
+        <ProductsList />
+      </Suspense>
+    </QueryClientProvider>
   )
 }
 
