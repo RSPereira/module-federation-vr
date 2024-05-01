@@ -25,6 +25,7 @@ export const ProductCard = ({
     }
 
     addProduct(data)
+    alert('Produto adicionado no carrinho.')
   }
 
   return (
