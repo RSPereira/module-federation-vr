@@ -1,3 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  --2xl: 1536px;
+
+  --neutral-light: #e4e8ed;
+  --neutral-dark: #1b2126;
+}

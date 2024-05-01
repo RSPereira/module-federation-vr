@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  justify-content: center;
+
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  padding: 2.5rem 0;
+  margin-top: 2.5rem;
+
+  border-top: 2px solid var(--neutral-light);
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-width: var(--2xl);
+  width: 100%;
+}
+
+.image {
+  max-width: 51px;
+  max-height: 51px;
+}
+
+.copywrite {
+  font-weight: 400;
+  font-size: 0.75rem;
+
+  color: var(--neutral-dark);
+}
