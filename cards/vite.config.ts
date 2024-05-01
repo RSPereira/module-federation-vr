@@ -13,6 +13,7 @@ export default defineConfig({
         './ProductsList': './src/components/ProductsList',
         './productAtom': './src/atoms/productAtom.ts',
         './productType': './src/types/productType.ts',
+        './formatCurrency': './src/utils/formatCurrencyToBrl.ts',
       },
       shared: ['react', 'react-dom', 'jotai'],
     }),

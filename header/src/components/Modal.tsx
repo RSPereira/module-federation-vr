@@ -1,5 +1,6 @@
 import {useProductsCart} from 'cards/productAtom'
 import {TProductCart} from 'cards/productType'
+import {formattedCurrency} from 'cards/formatCurrency'
 import {ReactComponent as Close} from '../assets/icons/close.svg'
 
 type ModalProps = {
@@ -42,11 +43,13 @@ export const Modal = ({isCartOpen, setIsCartOpen}: ModalProps) => {
                 <div className="flex justify-between mt-6 p-3 border border-neutral-dark rounded-lg items-center hover:border-stroke">
                   <img
                     className="max-w-18 max-h-14"
-                    src={product.image}
+                    src={product.thumbnail}
                     alt={`Imagem do produto: ${product.title}`}
                   />
                   <span className="text-sm">{product.title}</span>
-                  <span className="text-sm">{product.price}</span>
+                  <span className="text-sm">
+                    {formattedCurrency(product.price)}
+                  </span>
                 </div>
               ))}
               {!cart.length && (
