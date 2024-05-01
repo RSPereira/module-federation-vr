@@ -43,12 +43,16 @@ export const Title = styled.h2`
   font-weight: bold;
 
   color: ${colors['neutral-dark']};
+
+  margin: 0.75rem 0;
 `
 
 export const Description = styled.p`
   font-size: 0.75rem;
 
   color: ${colors['neutral-dark']};
+
+  margin-bottom: 0.75rem;
 `
 
 export const PriceWrapper = styled.div`
