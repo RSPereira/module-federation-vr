@@ -1,8 +1,10 @@
 import {useQuery} from '@tanstack/react-query'
 
-import {IProduct} from '../types/productType'
-import {ProductCard} from './ProductCard'
-import {getProducts} from '../services/productService'
+import {IProduct} from '../../types/productType'
+import {ProductCard} from '../ProductCard'
+import {getProducts} from '../../services/productService'
+
+import * as S from './styles'
 
 export const ProductsList = () => {
   const {data, isLoading} = useQuery({
@@ -11,11 +13,11 @@ export const ProductsList = () => {
   })
 
   return (
-    <>
+    <S.ProductsListWrapper>
       {isLoading ? (
         <span>Carregando...</span>
       ) : (
-        <div>
+        <S.ProductCardsWrapper>
           {data.map((product: IProduct) => (
             <ProductCard
               key={product.id}
@@ -26,8 +28,8 @@ export const ProductsList = () => {
               price={product.price}
             />
           ))}
-        </div>
+        </S.ProductCardsWrapper>
       )}
-    </>
+    </S.ProductsListWrapper>
   )
 }
