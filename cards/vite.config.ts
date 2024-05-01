@@ -10,7 +10,7 @@ export default defineConfig({
       filename: 'remoteEntry.js',
       exposes: {
         './QueryClientProvider': './src/providers/QueryClientProvider.tsx',
-        './ProductsList': './src/components/ProductsList.tsx',
+        './ProductsList': './src/components/ProductsList',
         './productAtom': './src/atoms/productAtom.ts',
         './productType': './src/types/productType.ts',
       },
