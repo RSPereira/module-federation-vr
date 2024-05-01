@@ -1,8 +1,6 @@
-import './App.css'
-
 import Header from 'header/App'
 import {ProductsList} from 'cards/ProductsList'
-import Footer from 'footer/App'
+import {Footer} from 'footer/Footer'
 
 function App() {
   return (
@@ -10,7 +8,6 @@ function App() {
       <Header />
       <ProductsList />
       <Footer />
-      <h1>HOST - Vite + React</h1>
     </>
   )
 }
