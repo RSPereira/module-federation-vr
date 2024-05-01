@@ -7,6 +7,10 @@ const widths = {
 export const ProductsListWrapper = styled.div`
   display: flex;
   justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+
+  min-height: 100vh;
 `
 
 export const ProductCardsWrapper = styled.div`
