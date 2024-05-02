@@ -13,7 +13,7 @@ export const ProductsList = () => {
   })
 
   return (
-    <S.ProductsListWrapper>
+    <S.ProductsListWrapper data-cy="cards">
       {isLoading ? (
         <span>Carregando...</span>
       ) : (

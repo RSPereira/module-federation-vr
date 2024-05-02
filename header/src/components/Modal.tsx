@@ -22,7 +22,9 @@ export const Modal = ({isCartOpen, setIsCartOpen}: ModalProps) => {
 
   return (
     <>
-      <div className={`${cssAnimation} absolute flex top-0 font-sans`}>
+      <div
+        className={`${cssAnimation} absolute flex top-0 font-sans`}
+        data-cy="modal">
         <div
           className={`${cssAnimation} bg-secondary fixed h-screen opacity-70`}
           onClick={() => setIsCartOpen(false)}></div>

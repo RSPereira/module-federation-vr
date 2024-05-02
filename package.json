@@ -11,7 +11,8 @@
     "stop": "kill-port --port 5000,5001,5002,5003",
     "start": "pnpm run build:remotes && pnpm run serve:remotes & pnpm run dev",
     "start:preview": "pnpm run build && pnpm run serve",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "cypress open"
   },
   "author": {
     "name": "Rodrigo Pereira"
@@ -21,6 +22,7 @@
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@originjs/vite-plugin-federation": "^1.3.5",
+    "cypress": "^13.8.1",
     "husky": "^9.0.11",
     "kill-port": "^2.0.1"
   }

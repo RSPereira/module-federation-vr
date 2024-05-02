@@ -10,7 +10,9 @@ export const Header = () => {
 
   return (
     <>
-      <header className="bg-primary flex flex-wrap justify-center p-4 mb-8 drop-shadow-md">
+      <header
+        className="bg-primary flex flex-wrap justify-center p-4 mb-8 drop-shadow-md"
+        data-cy="header">
         <main className="flex justify-between items-center w-full max-w-screen-2xl">
           <Logo />
           <button
