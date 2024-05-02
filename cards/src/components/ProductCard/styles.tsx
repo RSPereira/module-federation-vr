@@ -9,6 +9,7 @@ const colors = {
 }
 
 export const CardWrapper = styled.div`
+  max-width: 22rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,8 +35,8 @@ export const ImageWrapper = styled.div`
 `
 
 export const Image = styled.img`
-  max-width: 320px;
-  max-height: 200px;
+  max-width: 17.5rem;
+  max-height: 12rem;
 `
 
 export const Title = styled.h2`
@@ -52,7 +53,7 @@ export const Description = styled.p`
 
   color: ${colors['neutral-dark']};
 
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 `
 
 export const PriceWrapper = styled.div`
