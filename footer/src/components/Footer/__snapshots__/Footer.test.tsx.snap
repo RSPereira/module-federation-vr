@@ -1,0 +1,102 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Footer > renders the Footer component 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <footer
+        class="_footer_eb428f"
+        data-cy="footer"
+      >
+        <div
+          class="_footerWrapper_eb428f"
+        >
+          <img
+            alt="Logo da VR"
+            class="_image_eb428f"
+            src="/src/assets/vr-logo.png"
+          />
+          <span
+            class="_copywrite_eb428f"
+          >
+            © 2024 VR Benefícios - Todos os direitos reservados
+          </span>
+        </div>
+      </footer>
+    </div>
+  </body>,
+  "container": <div>
+    <footer
+      class="_footer_eb428f"
+      data-cy="footer"
+    >
+      <div
+        class="_footerWrapper_eb428f"
+      >
+        <img
+          alt="Logo da VR"
+          class="_image_eb428f"
+          src="/src/assets/vr-logo.png"
+        />
+        <span
+          class="_copywrite_eb428f"
+        >
+          © 2024 VR Benefícios - Todos os direitos reservados
+        </span>
+      </div>
+    </footer>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
