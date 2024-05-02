@@ -19,7 +19,7 @@ export default defineConfig({
       name: 'header-app',
       filename: 'remoteEntry.js',
       exposes: {
-        './App': './src/App.tsx',
+        './Header': './src/components/Header.tsx',
       },
       remotes: {
         cards: 'http://localhost:5002/assets/remoteEntry.js',
